@@ -3,8 +3,8 @@ Contributors: EDC Team
 Donate link: http://www.edc.org.kw
 Tags: Articles, Videos, Audios, Islam, Islamic websites, Archive, Islamic Content, Muslim, New Muslims, EDC
 Requires at least: 3.0
-Tested up to: 4.9.1
-Stable tag: 1.1
+Tested up to: 5.0.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,7 @@ New Muslims aspires to be a unique interactive and informative online resource a
 
 Features:
 
-* Getting the content (articles, videos, audios) of New-muslims.info.
+* Getting the content (articles, videos, audios) of NewMuslim.net.
 * Using Json API
 * Using Cron Job
 
@@ -38,6 +38,10 @@ PS: All the websites owned by EDC [(E-Da`wah Committee)](http://www.edc.org.kw),
 1. Show Categoreis
 
 == Changelog ==
+
+= 1.2 =
+
+* Change domain name.
 
 = 1.1 =
 

@@ -6,7 +6,7 @@ $opicnm_categories_lang = array();
 // ======================   Titles ==============================
 $nmcategories["new_muslims"] 					= array(
 													'title'=>"New Muslims",
-													'url'=>"http://www.new-muslims.info",
+													'url'=>"http://www.newmuslim.net",
 													'logo'=>"new_muslims.png",
 												);
 // =================== English ===========================
