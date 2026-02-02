@@ -20,6 +20,9 @@ class NewMuslimesMaincontroller extends app_nm_controlers {
 			$tab = '';
 		}
 		switch ($tab) {
+			case 'language':
+				$this->loadController('language');
+				break;
 			case 'options':
 				$this->loadController('options');
 				break;
@@ -27,7 +30,7 @@ class NewMuslimesMaincontroller extends app_nm_controlers {
 				echo $this->loadController('categories');
 				break;
 			default:
-				$this->loadController('options');
+				$this->loadController('language');
 				break;
 		}
 	}

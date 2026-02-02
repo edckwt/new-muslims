@@ -80,8 +80,9 @@ if (!function_exists('set_value')) {
 if (!function_exists('opic_get_data')) {
 	function opic_get_data($url = NULL) {
 
-		if ($url) {
-			return @file_get_contents($url);
+		$response = wp_remote_get($url,[ 'timeout' => 5000, 'httpversion' => '1.1','sslverify' => false]);
+		if ( is_array( $response ) && ! is_wp_error( $response ) && !empty($response['body']) ) {
+			return json_decode($response['body']);
 		}
 		return;
 	}
@@ -139,10 +140,15 @@ if (!function_exists('fun_nm_loadlang')) {
 				include_once $nmpath;
 				return $nmlang;
 			} else {
-				echo sprintf("Lnaguage File <b>%s</b> not found in path <b>%s</b>", $def_lang, NMLangpath);
-				exit();
+				add_action( 'admin_notices', function() use($def_lang){
+                    $class = 'notice notice-error';
+                    $message = sprintf("Lnaguage File  %s  not found in path  %s ", $def_lang, IFCLangpath);
+                    printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), esc_html( $message ) );   
+                } );
+				return array();
 			}
 		}else{
+		    
 			return array();
 		}
 

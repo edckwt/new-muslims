@@ -1,6 +1,6 @@
 <form method="post" action="<?php admin_url( 'options-general.php?page='.OPICNM_Page_SLUG ); ?>">
 <?php
-	echo wp_nonce_field( "edc-settings-page" ); 
+	echo wp_nonce_field(OPICNM_Page_SLUG,OPICNM_Page_SLUG."-settings-page"); 
 	
 	$NMHtmlHelper = new html_nm_helper();
 	$NMHtmlHelper->opic_admin_tabs();

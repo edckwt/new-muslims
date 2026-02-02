@@ -2,7 +2,7 @@
 include_once(OPICNM_PLUGIN_PATH.LIB.DS.'nm_pluginlifeciclye.php');
 include_once(OPICNM_PLUGIN_PATH.LIB.DS.'nm_function.php');
 $opicnm_lang = fun_nm_loadlang();
- 
+
 include_once(OPICNM_PLUGIN_PATH.LIB.DS.'app_nm_helpers.php');
 include_once(OPICNM_PLUGIN_PATH.LIB.DS.'html_nm_helper.php');
 include_once(OPICNM_PLUGIN_PATH.LIB.DS.'app_nm_controlers.php');
